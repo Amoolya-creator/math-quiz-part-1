@@ -1,39 +1,33 @@
-<!DOCTYPE html>
-<html>
 <head>
-<title>Math Quiz</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="main.js"></script>
+    <title>Quiz Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="fabric.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="mains.js"></script>
 </head>
 
 <body>
-
-<h1> Math Quiz Game</h1>
-<div class="container">
-    <center>
-    <div class="row">
-        <div class="col-sm-6">
-	        <h2>Player 1</h2>
-            <label for ="L1">Player 1 Login</label>
-            <input class="btn btn-warning" id="L1">  
-        </div>
-        <div class="col-sm-6">
-            <h2>Player 2</h2>
-            <label for ="L2">Player 2 Login</label>
-            <input class="btn btn-warning" id="L2">
-        </div>
+    <div class="container">
+        <div id="heading" class="my-4">Maths Quiz</div>
+        <div class="row m-2">
+            <div class="col-md-6 p-2 border border-danger">
+                <label class="m-2 p-3" for="user1">Player 1 Login :</label>
+                <input type="text" placeholder="Username" id="user1">
+                <button class="btn btn-primary m-4" type="submit" id="P1">Login</button>
+            </div>
+            <div class="col-md-6 p-2 border border-danger">
+                <label class="m-2 p-3" for="user2">Player 2 Login :</label>
+                <input type="text" placeholder="Username" id="user2">
+                <button class=" btn btn-primary m-4" type="submit" id="P2">Login</button>
+            </div>
+        </div>        
     </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <button type="button" onclick="adduser()" class="btn btn-info" id="play"> Let's play</button>
-        </div>
-    </div>
-    </center>
-</div>
-
 </body>
-</html>
